@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { ThemeProvider } from 'styled-components';
 
 import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
