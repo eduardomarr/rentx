@@ -6,7 +6,8 @@ import { Archivo_400Regular, Archivo_500Medium, Archivo_600SemiBold } from '@exp
 
 import AppLoading from 'expo-app-loading';
 
-import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
+
 import theme from './src/styles/theme';
 
 export default function App() {
@@ -20,12 +21,12 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    <AppLoading />
+    return <AppLoading />
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <Routes />
     </ThemeProvider>
   );
 }
